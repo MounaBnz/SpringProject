@@ -88,7 +88,6 @@
 	
 	<div class="container-fluid">
 
-		
 		<table class="table">
 
 			<tr>
@@ -160,7 +159,7 @@
 							<td>1</td>
 							<td>Product A</td>
 							<td>Electronics</td>
-							<td><img src="https://via.placeholder.com/150x150" alt="Product A Preview"></td>
+							<td><img src="https://unbumf.com/wp-content/uploads/2018/11/Mycroft_UnBumf-1024x512.png" alt="Product A Preview"></td>
 							<td>5</td>
 							<td>$19.99</td>
 							<td>1 lb</td>
@@ -177,13 +176,13 @@
 							<td>2</td>
 							<td>Product B</td>
 							<td>Clothing</td>
-							<td><img src="https://via.placeholder.com/150x150" alt="Product B Preview"></td>
+							<td><img src="http://cdn.shopify.com/s/files/1/0604/6154/7776/products/Panda-T-shirt-Girl_1200x1200.jpg?v=1638381978" alt="Product B Preview"></td>
 							<td>10</td>
 							<td>$29.99</td>
 							<td>2 lbs</td>
 							<td>A stylish shirt for any occasion</td>
 							<td><form action="/buy" method="get">
-								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+								<svg xmlns="https://www.rueducommerce.fr/media/produits/wewoo/img//guirlande-led-24-lumieres-cerisier-lampe-de-table-amenagement-de-la-chambre-decoration-creative-chevet-veilleuse-cadeaustyle-bauhinia-arbre-noir-10575812-27483206_1140x1140.jpg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
 		  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
 		</svg>	<input type="hidden" name="id" value="<%=rs.getInt(1)%>">
 									<input type="submit" value="Buy" class="btn btn-info btn-lg">
@@ -194,7 +193,7 @@
 							<td>3</td>
 							<td>Product C</td>
 							<td>Home & Garden</td>
-							<td><img src="https://via.placeholder.com/150x150" alt="Product C Preview"></td>
+							<td><img src="https://img.joomcdn.net/732b6a411d15eb7af140d33b74d3193fa2476f2e_original.jpeg" alt="Product C Preview"></td>
 							<td>3</td>
 							<td>$49.99</td>
 							<td>5 lbs</td>
@@ -205,14 +204,26 @@
 		</svg>	<input type="hidden" name="id" value="<%=rs.getInt(1)%>">
 									<input type="submit" value="Buy" class="btn btn-info btn-lg">
 									
-							</form></td>
-						
+							</form>
 						</tr>	
-					
+					<tr>
 					</td>
-					<td>
-					
-					
+					<td>2</td>
+					<td>Product D</td>
+					<td>Food & Drinks</td>
+					<td><img src="https://www.honestfoodtalks.com/wp-content/uploads/2021/09/How-to-make-bubble-tea.jpeg" alt="Product B Preview"></td>
+					<td>21</td>
+					<td>$12.99</td>
+					<td>0.5 lbs</td>
+					<td>A bubbly and refreshing tea</td>
+					<td><form action="/buy" method="get">
+						<svg xmlns="https://www.honestfoodtalks.com/wp-content/uploads/2021/09/How-to-make-bubble-tea.jpeg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+</svg>	<input type="hidden" name="id" value="<%=rs.getInt(1)%>">
+							<input type="submit" value="Buy" class="btn btn-info btn-lg">
+							
+					</form></td>
+					</tr>
 					</td>
 
 				</tr>
