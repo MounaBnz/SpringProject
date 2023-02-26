@@ -17,43 +17,41 @@
 </head>
 <style>
 	table {
-  font-family: Arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  color: #333;
-  background-color: #f2f2f2;
-}
+		width: 100%;
+		margin-top: 50px;
+		border-collapse: collapse;
+	}
+	
+	th, td {
+		padding: 10px;
+		text-align: center;
+		border: 1px solid #ddd;
+	}
+	
+	th {
+		background-color: #f2f2f2;
+		color: #333;
+		font-weight: bold;
+	}
+	
+	td img {
+		max-width: 100px;
+		max-height: 100px;
+	}
+	
+	.buy-btn {
+		background-color: #007bff;
+		color: #fff;
+		border: none;
+		padding: 10px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	
+	.buy-btn:hover {
+		background-color: #0069d9;
+	}
 
-th {
-  background-color: #007bff;
-  color: #e65b5b;
-  font-weight: bold;
-  padding: 12px;
-  text-align: center;
-}
-
-td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: center;
-}
-
-tr:nth-child(even) {
-  background-color: #e6e6e6;
-}
-
-.btn {
-  background-color: #007bff;
-  border: none;
-  color: #fff;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 .btn:hover {
   background-color: #0069d9;
@@ -150,15 +148,67 @@ tr:nth-child(even) {
 					<td>
 						<%= rs.getString(8) %>
 					</td>
-
-					<td>
-					<form action="/buy" method="get">
+					<td><form action="/buy" method="get">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
 </svg>	<input type="hidden" name="id" value="<%=rs.getInt(1)%>">
 							<input type="submit" value="Buy" class="btn btn-info btn-lg">
 							
-					</form>
+					</form></td>
+					<td>
+						<tr>
+							<td>1</td>
+							<td>Product A</td>
+							<td>Electronics</td>
+							<td><img src="https://via.placeholder.com/150x150" alt="Product A Preview"></td>
+							<td>5</td>
+							<td>$19.99</td>
+							<td>1 lb</td>
+							<td>A great product for your home</td>
+							<td><form action="/buy" method="get">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+		  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+		</svg>	<input type="hidden" name="id" value="<%=rs.getInt(1)%>">
+									<input type="submit" value="Buy" class="btn btn-info btn-lg">
+									
+							</form></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Product B</td>
+							<td>Clothing</td>
+							<td><img src="https://via.placeholder.com/150x150" alt="Product B Preview"></td>
+							<td>10</td>
+							<td>$29.99</td>
+							<td>2 lbs</td>
+							<td>A stylish shirt for any occasion</td>
+							<td><form action="/buy" method="get">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+		  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+		</svg>	<input type="hidden" name="id" value="<%=rs.getInt(1)%>">
+									<input type="submit" value="Buy" class="btn btn-info btn-lg">
+									
+							</form></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Product C</td>
+							<td>Home & Garden</td>
+							<td><img src="https://via.placeholder.com/150x150" alt="Product C Preview"></td>
+							<td>3</td>
+							<td>$49.99</td>
+							<td>5 lbs</td>
+							<td>A beautiful decoration for your home</td>
+							<td><form action="/buy" method="get">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+		  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+		</svg>	<input type="hidden" name="id" value="<%=rs.getInt(1)%>">
+									<input type="submit" value="Buy" class="btn btn-info btn-lg">
+									
+							</form></td>
+						
+						</tr>	
+					
 					</td>
 					<td>
 					
